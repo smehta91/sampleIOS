@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func portalButtonAction(_ sender: Any) {
         NSLog("Hello")
-        let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
+        guard let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios") else { return  }
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
-            moduleName: "RNHighScores",
+            moduleName: "RNPortal",
             initialProperties: mockData as [NSObject : AnyObject],
             launchOptions: nil
         )
