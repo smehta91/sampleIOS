@@ -40,6 +40,14 @@
                                     <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ae-h5-GN1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-MF-MRM">
+                                <rect key="frame" x="87" y="366" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="portal"/>
+                                <connections>
+                                    <action selector="portalButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKw-4c-3kG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
